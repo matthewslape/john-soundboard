@@ -10,6 +10,9 @@ html {
   overflow-x: hidden;
   padding: 0;
   font-family: "Futura", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* With Flexbox, Horizontally and vertically cneter */
@@ -52,6 +55,15 @@ kbd {
           justify-content: center;
   position: relative;
 }
+.keysCustom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    position: relative;
+  }
 
 /* Visual Keys / Squares */
 .key {
@@ -62,8 +74,8 @@ kbd {
 
   /* Styling of keys */
   padding: 1rem;
-  width: 16rem;
-  height: 16rem;
+  width: 27vw;
+  height: 17vh;
   text-align: center;
   background: #607d8b;
   border-radius: 0.5em;
@@ -77,6 +89,14 @@ kbd {
   
   /* Call Transition */
   transition: all .09s ease;
+}
+.keyCustom {
+  padding: 1rem;
+  width: 27vw;
+  height: 10vh;
+  text-align: center;
+  background: #4022eb;
+  border-radius: 0.5em;
 }
 
 /* Transition Animation. Last frame of animation. */
