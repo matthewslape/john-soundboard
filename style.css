@@ -1,0 +1,88 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+/* Set Fonts and Resets */
+body,
+html {
+  background: white;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  font-family: "Futura", monospace;
+}
+
+/* With Flexbox, Horizontally and vertically cneter */
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+
+/* Actual Keyboard Keys */
+kbd {
+  font-family: Poppins;
+  display: block;
+  font-size: 2rem;
+  color: azure;
+  display: none;
+}
+
+/* Name of Sound */
+.sound {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: azure;
+  padding: 0.5rem;
+}
+
+/* Use CSS Grid to display keys */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+/* Visual Keys / Squares */
+.key {
+  /* Typography */
+  margin: .5rem;
+  font-size: 4rem;
+  padding: 1rem;
+
+  /* Styling of keys */
+  padding: 1rem;
+  width: 16rem;
+  height: 16rem;
+  text-align: center;
+  background: #607d8b;
+  border-radius: 0.5em;
+
+  /* Change mouse pointer */
+  cursor:pointer;
+  -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  
+  /* Call Transition */
+  transition: all .09s ease;
+}
+
+/* Transition Animation. Last frame of animation. */
+.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+  background: rgb(70, 196, 97);
+}
