@@ -73,6 +73,9 @@ kbd {
   padding: 1rem;
 
   /* Styling of keys */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   width: 27vw;
   height: 17vh;
